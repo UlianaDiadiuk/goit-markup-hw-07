@@ -1,0 +1,21 @@
+:root {
+    --logo-blue-color: #2196f3;
+    --logo-blue-transparent: rgba(33, 150, 243, 0.9);
+    --hover-button: #188ce8;
+    --logo-black-color: #000000;
+    --headers-color: #212121;
+    --text-grey-color: #757575;
+    --text-white-color: #ffffff;
+    --address-color: rgba(255, 255, 255, 0.6);
+    --grey-background: #f5f4fa;
+    --background-color: #2f303a;
+    --hidden-titles: #ffffff00;
+    --porfolio-background: #eeeeee;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --border-color: #ECECEC;
+    --icon-color: #AFB1B8; 
+    --footer-icons: rgba(255, 255, 255, 0.1);
+    --tasks-background: rgba(47, 48, 58, 0.8);
+    --modal-backdrop: rgba(0, 0, 0, 0.2);
+    --placeholder: rgba(117, 117, 117, 0.5);
+}

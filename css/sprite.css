@@ -1,0 +1,156 @@
+
+
+/*------------------------contacts part-------------------*/
+
+
+.contacts-icons {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/*------------------------values part-------------------*/
+
+.values-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--grey-background);
+}
+
+
+
+/*--------------------sociaL media part-----------------*/
+
+
+.link-media {
+    padding: 12px;
+    border: 0ch;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    color: var(--icon-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-media:hover, 
+.link-media:focus {
+    color: var(--text-white-color);
+    background-color: var(--logo-blue-color);
+}
+
+.media-svg {
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+
+/*--------------------companies part-----------------*/
+
+.companies {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.companies h2 {    
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+    display: flex;
+    margin: 50px 0 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.companies-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.companies-item {
+    box-sizing: border-box;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.companies-item:hover,
+.companies-item:focus {
+    border: 1px solid var(--logo-blue-color);
+}
+
+
+.companies-item .client-link {
+    display: flex;
+            align-items: center;
+            justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: var(--icon-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover,
+.client-link:focus {
+    color: var(--logo-blue-color);
+}
+
+.companies-icons {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+
+}
+
+/*--------------------sociaL media footer-----------------*/
+
+
+.socials-list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex; 
+    list-style: none;
+}
+
+footer .link-media {
+    display: flex;
+    background-color: var(--footer-icons);
+    color: var(--text-white-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .link-media:hover {
+    background-color: var(--logo-blue-color);
+}
+
+.socials-list li:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+footer .media-svg {
+    fill: currentColor;
+}
+
+
+
+/* ------------------Telegram icon-------------------*/
+
+
