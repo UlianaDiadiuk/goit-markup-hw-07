@@ -1,0 +1,252 @@
+/*------------------------------Main-------------------------*/
+
+/* hero part */
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-size: 1600px;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("./bckgr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__container {
+    width: 696px;
+}
+
+.hero__text {
+    margin: 0;
+
+    color: var(--text-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    display: flex;
+    text-align: center;
+    padding: 10px 32px;
+
+    min-width: 200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+    background-color: var(--hover-button);
+}
+
+
+/*------------------------values part-------------------*/
+
+
+
+.values__name {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.values__text {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.values__list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.values__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.values__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.values__part {
+    padding-top: 30px;
+}
+
+
+
+/*------------------------tasks part-------------------*/
+
+.tasks__title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tasks {
+    padding-top: 0;
+}
+
+.tasks-list {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.tasks__item+.tasks__item {
+    margin-left: 30px;
+}
+
+.thumb {
+    position: relative;
+}
+
+
+.tasks__text {
+    position: absolute;
+    top: 224px;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    width: 100%;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    border: none;
+    color: var(--text-white-color);
+    background-color: var(--tasks-background);
+}
+
+
+/*-------team part--------*/
+
+
+.team {
+    background-color: var(--grey-background);
+}
+
+.team__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__title {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.team__list {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.member {
+    background-color: var(--text-white-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.member:not(:last-child) {
+    margin-right: 30px;
+}
+
+.member__name {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.member__job {
+    margin: 10px 0 0 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* --------------------------social media------------------------------ */
+
+
+.social-media {
+    display: flex;
+    padding: 0;
+    margin-top: 16px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-media__item {
+    display: flex;
+}
+
+/*--------------------companies part-----------------*/
+
+
+.companies h2 {
+    margin: 0;
+}
+
+.companies__list {
+    display: flex;
+    margin: 50px 0 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.companies__item:not(:last-child) {
+    margin-right: 30px;
+}

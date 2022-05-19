@@ -3,14 +3,14 @@
 /*------------------------contacts part-------------------*/
 
 
-.contacts-icons {
+.contacts__icons {
     margin-right: 10px;
     fill: currentColor;
 }
 
 /*------------------------values part-------------------*/
 
-.values-img {
+.values__img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
 /*--------------------sociaL media part-----------------*/
 
 
-.link-media {
+.social-media__link {
     padding: 12px;
     border: 0ch;
     border-radius: 50%;
@@ -38,13 +38,13 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-media:hover, 
-.link-media:focus {
+.social-media__link:hover, 
+.social-media__link:focus {
     color: var(--text-white-color);
     background-color: var(--logo-blue-color);
 }
 
-.media-svg {
+.social-media__svg {
     align-items: center;
     justify-content: center;
     width: 20px;
@@ -55,33 +55,8 @@
 
 /*--------------------companies part-----------------*/
 
-.companies {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
-.companies h2 {    
-    margin: 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.clients-list {
-    display: flex;
-    margin: 50px 0 0 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.companies-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.companies-item {
+.companies__item {
     box-sizing: border-box;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
@@ -89,13 +64,13 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.companies-item:hover,
-.companies-item:focus {
+.companies__item:hover,
+.companies__item:focus {
     border: 1px solid var(--logo-blue-color);
 }
 
 
-.companies-item .client-link {
+.companies__link {
     display: flex;
             align-items: center;
             justify-content: center;
@@ -106,29 +81,28 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.companies__link:hover,
+.companies__link:focus {
     color: var(--logo-blue-color);
 }
 
-.companies-icons {
+.companies__icons {
     fill: currentColor;
     width: 106px;
     height: 60px;
-
 }
 
 /*--------------------sociaL media footer-----------------*/
 
 
-.socials-list {
+.social-media {
     margin: 20px 0 0 0;
     padding: 0;
     display: flex; 
     list-style: none;
 }
 
-footer .link-media {
+.social-media__link {
     display: flex;
     background-color: var(--footer-icons);
     color: var(--text-white-color);
@@ -136,16 +110,16 @@ footer .link-media {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-footer .link-media:hover {
+.social-media__link:hover {
     background-color: var(--logo-blue-color);
 }
 
-.socials-list li:not(:last-child) {
+.social-media__item:not(:last-child) {
     margin-right: 10px;
 }
 
 
-footer .media-svg {
+.social-media__svg {
     fill: currentColor;
 }
 
