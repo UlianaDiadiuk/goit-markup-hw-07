@@ -10,29 +10,28 @@
 
 
     background-size: 1600px;
-    background-image:
-        linear-gradient(to bottom,
+    background-image: linear-gradient(to bottom,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url("./bckgr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-.hero__container {
-    width: 696px;
-}
+    &__container {
+        width: 696px;
+    }
 
-.hero__text {
-    margin: 0;
+    &__text {
+        margin: 0;
 
-    color: var(--text-white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+        color: $white;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
 }
 
 .hero__button {
@@ -47,12 +46,14 @@
     margin-bottom: 0;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        background-color: $hover-button;
+    }
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: var(--hover-button);
-}
 
 
 /*------------------------values part-------------------*/
@@ -87,15 +88,16 @@
     padding: 0;
 }
 
-.values__item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .values__item {
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .values__part {
@@ -106,13 +108,35 @@
 
 /*------------------------tasks part-------------------*/
 
-.tasks__title {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .tasks {
     padding-top: 0;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__text {
+        position: absolute;
+        top: 224px;
+
+        padding-top: 27px;
+        padding-bottom: 27px;
+        margin: 0;
+        width: 100%;
+
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        border: none;
+        color: $white;
+        background-color: $tasks-background;
+    }
 }
 
 .tasks-list {
@@ -131,86 +155,71 @@
 }
 
 
-.tasks__text {
-    position: absolute;
-    top: 224px;
 
-    padding-top: 27px;
-    padding-bottom: 27px;
-    margin: 0;
-    width: 100%;
-
-    text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    border: none;
-    color: var(--text-white-color);
-    background-color: var(--tasks-background);
-}
 
 
 /*-------team part--------*/
 
 
 .team {
-    background-color: var(--grey-background);
+    background-color: $grey-background;
+
+    &__container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    &__list {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 0;
+        padding: 0;
+    }
 }
 
-.team__container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.team__title {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.team__list {
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 0;
-    padding: 0;
-}
 
 .member {
-    background-color: var(--text-white-color);
+    background-color: $white;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__name {
+        margin: 0;
+        padding: 0;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__job {
+        margin: 10px 0 0 0;
+        padding: 0;
+
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 }
 
-.member:not(:last-child) {
-    margin-right: 30px;
-}
 
-.member__name {
-    margin: 0;
-    padding: 0;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.member__job {
-    margin: 10px 0 0 0;
-    padding: 0;
-
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
 
 /* --------------------------social media------------------------------ */
 
@@ -224,13 +233,14 @@
     justify-content: center;
 }
 
-.social-media__item:not(:last-child) {
-    margin-right: 10px;
-}
-
 .social-media__item {
     display: flex;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
+
 
 /*--------------------companies part-----------------*/
 

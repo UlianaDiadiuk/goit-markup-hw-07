@@ -2,7 +2,7 @@ body,
 .link {
     font-family: Roboto, sans-serif;
     text-decoration: none;
-    color: var(--headers-color);
+    color: $headers;
 }
 
 .list {
@@ -20,18 +20,18 @@ body,
     line-height: 1.875;
     letter-spacing: 0.06em;
 
-    box-shadow: 0px 4px 4px var(--shadow-color);
+    box-shadow: 0px 4px 4px $shadow;
 
 
-    color: var(--text-white-color);
-    background-color: var(--logo-blue-color);
+    color: $white;
+    background-color: $logo;
     cursor: pointer;
 
 }
 
 
 .text {
-    color: var(--text-grey-color);
+    color: $text-grey;
 }
 
 
@@ -53,6 +53,8 @@ body,
 }
 
 
+
+
 /*-----------Container--------------*/
 
 .container {
@@ -69,10 +71,7 @@ body,
 }
 
 
-
-
 .visually-hidden {
-
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -83,5 +82,3 @@ body,
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-
